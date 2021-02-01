@@ -3,10 +3,15 @@ const drawerWidth = 350;
 const appBar = '172.8';
 export const UseStyles = makeStyles(theme => (
 {
+    root: {
+      display: 'inline-flex',
+      width: '100%'
+    },
     drawer: {
-      width: '300px',
-      borderRight: '1px solid black',
-      height: '100vh'
+      width: '400px',
+      // borderRight: '1px solid black',
+      height: '100vh', 
+      background: '#fff'
     },
     searchInput:{
       width: '100%',
@@ -21,7 +26,7 @@ export const UseStyles = makeStyles(theme => (
     },
     search: {
       display: 'flex',
-      margin: '0rem 2rem 0rem 2rem',
+      margin: '0rem 3rem 0rem 3rem',
       paddingTop: '2rem'
     },
     searchIcon: {
@@ -29,7 +34,7 @@ export const UseStyles = makeStyles(theme => (
       marginLeft: '-2rem'
     },
     drawerTitle: {
-      marginLeft: '2rem',
+      marginLeft: '3rem',
       color: '#00000090',
       fontWeight: '500',
       marginTop: '1rem',
@@ -44,9 +49,9 @@ export const UseStyles = makeStyles(theme => (
         overflow: 'auto'
     },
     menuItem: {
-      height: '3rem',
+      height: '4rem',
       cursor: 'pointer',
-      paddingLeft: '.5rem'
+      paddingLeft: '1.5rem'
 
     },
     verticalAlignMiddle: {
@@ -61,11 +66,50 @@ export const UseStyles = makeStyles(theme => (
     w100: {
       width: '100%'
     },
+    h100: {
+      height: '100%'
+    },
     hInherit: {
       height: 'inherit'
     },
     fW600:{
       fontWeight: '600'
+    },
+    w2rem:{
+      width: '2rem'
+    },
+    bgWhite: {
+      background: '#fff'
+    },
+    contentSection: {
+      width: '100%'
+    },
+    p2rem:{
+      padding: '2rem'
+    },
+    pt1rem:{
+      paddingTop: '1rem'
+    },
+    pt2rem:{
+      paddingTop: '2rem'
+    },
+    pr2rem:{
+      paddingRight: '2rem'
+    },
+    pb2rem:{
+      paddingBottom: '2rem'
+    },
+    m2rem:{
+      margin: '2rem'
+    },
+    bgBase:{
+      background: '#f5f7f8'
+    },
+    ptrr3rem: {
+      borderTopRightRadius: '3rem'
+    },
+    pbrr3rem: {
+      borderBottomRightRadius: '3rem'
     }
 }
   

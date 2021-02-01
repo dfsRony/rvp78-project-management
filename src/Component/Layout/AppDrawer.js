@@ -1,14 +1,21 @@
 import React from 'react';
 import SearchIcon from '@material-ui/icons/Search';
+import ViewQuiltOutlinedIcon from '@material-ui/icons/ViewQuiltOutlined';
+import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
+import FormatListBulletedOutlinedIcon from '@material-ui/icons/FormatListBulletedOutlined';
+import EventOutlinedIcon from '@material-ui/icons/EventOutlined';
+import TimerOutlinedIcon from '@material-ui/icons/TimerOutlined';
+import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
+import SmsOutlinedIcon from '@material-ui/icons/SmsOutlined';
 import UseStyles from '../UseStyles';
-import DrawerContent from './DrawerContent';
 import classNames from 'classnames';
 
 
 export default () => {
     const classes= UseStyles();
     return (
-        <div className={classes.drawer}>
+        <div>
+                  <div className={classes.drawer}>
             <div className={classes.search}>
                 <input placeholder="Search" className={classes.searchInput}/>
                 <span>
@@ -23,6 +30,9 @@ export default () => {
                     <ul className={classes.menuList}>
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                                <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <ViewQuiltOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
                                     Dashboard
                                 </div>
@@ -30,12 +40,18 @@ export default () => {
                         </li>
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                                <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <WorkOutlineOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
                                     Project
                                 </div>
                             </div></li>
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                                <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <FormatListBulletedOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
                                     My Task
                                 </div>
@@ -50,28 +66,40 @@ export default () => {
                         {/* </li> */}
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                                <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <EventOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
-                                    Calendar
+                                   Calendar
                                 </div>
                             </div></li>
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                                <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <TimerOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
-                                    Time Manage
+                                   Time Manage
                                 </div>
                             </div>
                         </li> 
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                                <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <SettingsOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
-                                    Setting
+                                   Setting
                                 </div>
                             </div>
                         </li>
                         <li className={classNames(classes.menuItem, 'menuItem') }>
                             <div className={classNames(classes.dTable, classes.w100, classes.hInherit)}>
+                            <div className={classNames(classes.dTableCell,classes.w2rem, classes.verticalAlignMiddle, classes.fW600)}>
+                                    <SmsOutlinedIcon /> 
+                                </div>
                                 <div className={classNames(classes.dTableCell, classes.verticalAlignMiddle, classes.fW600)}>
-                                    Chat
+                                   Chat
                                 </div>
                             </div>
                         </li>
@@ -79,6 +107,8 @@ export default () => {
                 </div>
             </div>
             
+        </div>
+  
         </div>
     );
 }
