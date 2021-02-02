@@ -16,13 +16,14 @@ export const UseStyles = makeStyles(theme => (
     searchInput:{
       width: '100%',
       height: '2.5rem',
-      border: '1px solid #ccc',
-      borderRadius: '.5rem',
+      border: '1px solid transparent',
+      borderRadius: '2rem',
       fontSize: '.9rem',
       color: '#00000090',
       fontWeight: '500', 
-      paddingRight: '2rem',
-      paddingLeft: '.5rem'
+      paddingLeft: '2rem',
+      paddingRight: '.5rem',
+      // marginRight: '-2rem'
     },
     search: {
       display: 'flex',
@@ -57,32 +58,50 @@ export const UseStyles = makeStyles(theme => (
     verticalAlignMiddle: {
       verticalAlign: 'Middle'
     },
+    //display
     dTable: {
       display: 'table'
     },
     dTableCell: {
       display: 'table-cell'
     },
+    //display end
+    //width
     w100: {
       width: '100%'
     },
+    w2rem:{
+      width: '2rem'
+    },
+    //width end
+    //height
     h100: {
       height: '100%'
     },
     hInherit: {
       height: 'inherit'
     },
+    //height end
     fW600:{
       fontWeight: '600'
-    },
-    w2rem:{
-      width: '2rem'
     },
     bgWhite: {
       background: '#fff'
     },
     contentSection: {
       width: '100%'
+    },
+    //margin
+    m2rem:{
+      margin: '2rem'
+    },
+    //margin end
+    bgBase:{
+      background: '#f5f7f8'
+    },
+    //padding
+    ptrr3rem: {
+      borderTopRightRadius: '3rem'
     },
     p2rem:{
       padding: '2rem'
@@ -99,17 +118,15 @@ export const UseStyles = makeStyles(theme => (
     pb2rem:{
       paddingBottom: '2rem'
     },
-    m2rem:{
-      margin: '2rem'
-    },
-    bgBase:{
-      background: '#f5f7f8'
-    },
-    ptrr3rem: {
-      borderTopRightRadius: '3rem'
-    },
     pbrr3rem: {
       borderBottomRightRadius: '3rem'
+    },
+    //padding end
+    card:{
+      width: '14rem',
+      height: '19rem',
+      // background: ,
+      margin: '2rem0'
     }
 }
   

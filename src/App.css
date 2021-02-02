@@ -5,3 +5,208 @@
 .menuItem{
   font-size: .9rem;
 }
+.card{
+  background: linear-gradient(135deg, rgba(224, 97, 13, 0.3) 45%, rgba(255, 255, 255, 0.205) 120%);
+  border-radius: 1rem;
+  margin: 1rem;
+  display: inline-block;
+}
+.cardImages{
+  text-align: center;
+  height: 8rem;
+}
+.cardImages > .cardImagesCell{
+ display: table;
+ width: 100%;
+ height: inherit;
+}
+.cardImages > .cardImagesCell > .cardImagesContent{
+  display: table-cell;
+  height: fit-content;
+  vertical-align: middle;
+  margin-top: 1rem;
+ }
+.cardImages > .cardImagesCell > .cardImagesContent > img{
+  background-color: #2979f4;
+  border-radius: 5rem;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.card > div > .cardUserName{
+  text-align: center;
+  font-weight: 800;
+  font-size: .9rem;
+  color: #001e63de;
+}
+.card > div > .cardProjectList {
+  text-align: center;
+  margin: .5rem;
+  color: #001e63de;
+}
+.card > div > .cardProjectList > span {
+  text-align: center;
+  font-size: .6rem;
+  color: #001e6395;
+  background-color: #fff;
+  font-weight: 700;
+  padding: .3rem 1rem .3rem 1rem ;
+  margin: .25rem;
+  border-radius: 5rem;
+  /* border: 1.5px solid rgba(224, 97, 13,1) */
+}
+.card > div >.cardActionButton{
+  height: 6rem;  
+}
+.card > div > .cardActionButton > div > div > span{
+  height: 5rem;  
+  background: #fff;
+  padding: .75rem 3rem .75rem 3rem;
+  border-radius: 2rem;
+  margin-top: 3rem;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  font-size: .9rem;
+  color: #001e63;
+  font-weight: 700;
+  }
+.pageTitle{
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0 5rem;
+}
+.pageNavBar{
+  margin: 2rem;
+  height: 5rem;
+  width: 95%;
+  background: #fff;
+  border-radius: 1rem;
+  /* padding-left: 2rem; */
+}
+/* height */
+.h100{
+  height: 100%;
+}
+/* height end */
+/* text */
+.center {
+  text-align: center;
+}
+/* text end */
+/* padding */
+.pt4rem {
+  padding-top: 2rem;
+}
+.p-2rem {
+  padding: 2rem;
+}
+.p-1rem {
+  padding: 1rem;
+}
+/* padding end */
+/* display */
+.dInlineFlex{
+  display: inline-flex;
+}
+.dTable{
+  display: table;
+}
+.dTableCell{
+  display: table-cell;
+}
+.dFlex{
+  display: flex;
+}
+/* display end  */
+/* vertical align */
+.vAlignMiddle{
+  vertical-align: middle;
+}
+/* vertical align end */
+.search{
+  margin: 0rem 3rem 0rem 3rem;
+  display: table;
+  height: 100%;
+  width: 55rem;
+
+}
+.searchIcon {
+  height: 2.5rem;
+  vertical-align: middle;
+  /* padding-left: 2rem; */
+  position: absolute;
+  margin: .5rem;
+}
+.fRight{
+  float: right
+}
+.navBarNotif{
+  width: 5rem;
+}
+
+.navBarUser{
+  height: auto;
+  width: 3rem;
+ }
+ .navBarUser > img{
+  height: auto;
+  width: 3rem;
+  border-radius: 5rem;
+  background: red;
+  height: 3rem;
+  object-fit: cover;
+ } 
+ .bgBase{
+  background: #f5f7f8
+}
+.searchInput{
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  font-size: .9rem;
+  color: #00000090;
+  font-weight: 500; 
+  padding-left: 2rem;
+  padding-right: .5rem;
+}
+.ml-2rem{
+  margin-left: 2rem;
+}
+.actionBar{
+  margin-left: 2rem;
+  display: flex;
+}
+.actionBar > .item {
+  background: #fff ;
+  width: fit-content;
+  border-radius: 1rem;
+  height: 3.75rem;
+  color: #afafaf;
+  border: 2px #fff solid;
+  margin: 0  .25rem;
+}
+.actionBar > .item.active {
+  background: #7042ce50 !important;
+  width: fit-content;
+  border-radius: 1rem;
+  height: 3.75rem;
+  color: #7042ce !important;
+  border: 2px #7042ce solid !important;
+  margin: 0  .25rem;
+}
+.actionBar > .add {
+  color: #fff ;
+  width: fit-content;
+  border-radius: 1rem;
+  height: 3.75rem;
+  background-color: #7042ce;
+  border: 2px #fff solid;
+  margin: 0  .25rem;
+  left: 83%;
+  position: relative;
+}
